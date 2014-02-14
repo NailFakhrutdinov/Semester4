@@ -22,8 +22,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<sourceDirectory>src\main\resources</sourceDirectory>
-		<outputDirectory>target\classes</outputDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
