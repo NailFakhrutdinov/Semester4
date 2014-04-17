@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        #table {
+            border: 1px solid #e3e3e3;
+            background-color: #f2f2f2;
+            width: 100%;
+            font: 10px;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+        }
+        .error {color : red}
+    </style>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <td>Title</td>
+        <td>Start time</td>
+    </tr>
+#foreach($todo in $toDoList.All)
+    <tr>
+        <td>$todo.title</td>
+        <td>$todo.start</td>
+        <td><a href="#springUrl("/edit/$todo.id")">Edit</a></td>
+        <td><a href="#springUrl("/delete/$todo.id")">Delete</a></td>
+    </tr>
+#end
+</table>
+<form method="post">
+  Add new Todo: #springFormInput("toDo.title" "")</br>
+                #springShowErrors("<br>" "error")
+    <input type="submit" value="Add Todo"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <style>
+        .error {color : red}
+    </style>
+</head>
+<body>
+<form method="post">
+    Title :      #springFormInput("toDo.title" "")</br>
+                 #springShowErrors("<br>" "error")
+                 #springFormHiddenInput("toDo.id" "")
+                 #springFormHiddenInput("toDo.start" "")
+    <input type="submit" value="Edit Todo"/>
+</form>
+</body>
+</html>
