@@ -5,7 +5,7 @@
 	<artifactId>Task1</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HelloUser Maven Webapp</name>
+	<name>HelloUser Maven Webapp1</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
